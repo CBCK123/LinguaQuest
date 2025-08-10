@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japanese Lessons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: greenyellow;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #0055aa;
+    }
+    iframe {
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Japanese Lessons</h1>
+  <p>Welcome! Let's start your journey in learning Japanese.</p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6p9Il_j0zjc?si=5jyCCnnYNVJku5bv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+
+<a href="index4.html" class="animated-btn">Take Quiz</a>
+
+<style>
+  .animated-btn {
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    animation: pulse 1.5s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .animated-btn:hover {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+  }
+
+  @keyframes pulse {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.05); }
+    100% { transform: translateX(-50%) scale(1); }
+  }
+</style>
+
+</html>

@@ -1,0 +1,135 @@
+<!-- languages.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>languages</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #d60abe;
+    }
+    /* ===== Background Video Styling ===== */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Keeps the video in the background */
+  opacity: 0.7;  /* Optional: makes content easier to read */
+}
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #343a40;
+      color: rgb(246, 235, 235);
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar nav a {
+      margin: 0 10px;
+      color: #f8f9fa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar nav a:hover {
+      text-decoration: underline;
+    }
+
+    .language-grid {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .language-grid h1 {
+      margin-bottom: 2rem;
+      font-size: 4rem;
+      color: #f1e9e9;
+    }
+    
+    .flags {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;               /* Increased gap between flags */
+  flex-wrap: wrap;
+  margin-top: 150px;        /* Push flags downward */
+}
+
+
+    .flag-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .flag-card img {
+      width: 120px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(10, 10, 10, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .flag-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .flag-card span {
+      margin-top: 20px;
+      font-size: 2.0rem;
+      font-weight: 700;
+      color: #e8dbdb;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+  <source src="images\5157-183300197.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+  <header class="navbar">
+    <div class="logo">🌍 LinguaQuest</div>
+    
+
+    <nav>
+      <a href="index2.html">Home</a>
+    
+    </nav>
+  </header>
+
+  <main class="language-grid">
+    <h1>Select a Language</h1>
+    <div class="flags">
+    <a class="flag-card" href="japanese/jlesson.html">
+
+
+
+        <img src="images/japan.png" alt="Japanese" style="width: 300px; height: auto;" />
+
+        <span id="100">Japanese</span>
+      </a>
+    <a class="flag-card" href="german/glesson.html">
+
+
+        <img src="images\Flag_of_Germany.svg.png" alt="German"  style="width: 300px; height: auto;"/>
+        <span id="200">German</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

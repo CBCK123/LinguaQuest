@@ -1,0 +1,132 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e3dfe3;
+  color: #0e0d0d;
+}
+
+/* Header/Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(243, 238, 242);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2a2929;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #ff5722;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: white;
+  color: #2b2a2a;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+.hero-text {
+  max-width: 60%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.flags img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Hero Image */
+.hero-img img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features {
+  background: #222;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  margin: 5px;
+  width: 250px;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #111;
+  color: #ccc;
+}
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.65; /* Optional: add transparency */
+}

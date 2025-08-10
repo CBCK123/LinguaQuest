@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>German Quests</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      text-align: center;
+      padding-top: 200px;
+      padding-bottom:160px ;
+      background: url('japan.webp') no-repeat center center/cover;
+      margin: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      animation: slideDown 1s ease forwards;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 80px;
+      padding: 20px 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      background: linear-gradient(135deg, #00f7ff, #ee0979);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      transform: scale(0.95);
+      opacity: 0;
+      animation: popIn 0.8s forwards;
+    }
+
+    /* Staggered animations for each button */
+    .btn:nth-child(2) { animation-delay: 0.3s; }
+    .btn:nth-child(3) { animation-delay: 0.5s; }
+    .btn:nth-child(4) { animation-delay: 0.7s; }
+
+    .btn:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+    
+  <h1> Choose a Japanese Quest Type</h1>
+
+  <a href="mcqj.html" class="btn">📝 MCQ Quiz</a>
+  <a href="fillj.html" class="btn">✍️ Fill in the Blank</a>
+  <a href="dragj.html" class="btn">🧩 Drag & Drop</a>
+</body>
+</html>
